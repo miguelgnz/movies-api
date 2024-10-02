@@ -1,0 +1,32 @@
+###Get /movies
+GET http://localhost:3001/movies
+
+###Get movies by genre
+GET http://localhost:3001/movies?genre=sci-fi
+
+###Get movies by id
+GET http://localhost:3001/movies/1
+
+###Post a movie
+POST http://localhost:3001/movies
+Content-Type: application/json
+
+{
+    "title": "Jack",
+    "director": "Tim Burton",
+    "year": 2010,
+    "genre": "Terror",
+}
+
+###Update a movie
+PATCH http://localhost:3001/movies/3
+Content-Type: application/json
+
+{
+    "year": 2012
+}
+
+###Delete a movie
+DELETE http://localhost:3001/movies/2
+
+
